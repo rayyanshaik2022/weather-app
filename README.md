@@ -1,7 +1,7 @@
 # weather-app
 
 ## Live Demo Link
-[Click Here for demo]()
+[Click Here for demo](https://rayyanshaik2022.github.io/weather-app/)
 
 ---
 

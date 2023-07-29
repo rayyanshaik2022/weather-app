@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="styles.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="main">
+            <div class="title big">
+                <input type="text" id="city-input" value="New York" maxlength="16">
+                <p class="date"></p>
+            </div>
+
+            <div class="temp big">
+                <h1>81 °</h1>
+                <p class="weather-status">Sunny</p>
+            </div>
+
+            <div class="card">
+                <div class="view-item">
+                    <div class="icon-container">
+                        <img class="wind-color" src="./assets/air.svg" alt="air.svg">
+                        <p id="wind-speed">3 m/s</p>
+                    </div>
+                    <p>Wind</p>
+                </div>
+
+                <div class="view-item">
+                    <div class="icon-container">
+                        <img class="humidity-color" src="./assets/water_drop.svg" alt="water_drop.svg">
+                        <p id="humidity">74%</p>
+                    </div>
+                    <p>Humidity</p>
+                </div>
+
+                <div class="view-item">
+                    <div class="icon-container">
+                        <img class="rain-color" src="./assets/umbrella.svg" alt="umbrella.svg">
+                        <p id="rain-chance">8%</p>
+                    </div>
+                    <p>Rain</p>
+                </div>
+            </div>
+
+            <div class="card-invis"  id="today">
+                <div class="forecast">
+                    <p class="day-week">Today</p>
+                    <div class="temperature">
+                        <p class="temp-low">18°</p>
+                        <p>-</p>
+                        <p class="temp-high">24°</p>
+                    </div>
+                    <img class="sunny w-icon" src="./assets/sunny.svg" alt="sunny.svg">
+                </div>
+
+                <div class="forecast" id="one-day">
+                    <p class="day-week">Sunday</p>
+                    <div class="temperature">
+                        <p class="temp-low">18°</p>
+                        <p>-</p>
+                        <p class="temp-high">24°</p>
+                    </div>
+                    <img class="sunny w-icon" src="./assets/sunny.svg" alt="sunny.svg">
+                </div>
+
+                <div class="forecast" id="two-day">
+                    <p class="day-week">Monday</p>
+                    <div class="temperature">
+                        <p class="temp-low">18°</p>
+                        <p>-</p>
+                        <p class="temp-high">24°</p>
+                    </div>
+                    <img class="sunny w-icon" src="./assets/sunny.svg" alt="sunny.svg">
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,185 @@
+:root {
+    --bg-primary: #1a1b1e;
+    --bg-secondary: #21232a;
+    --text-primary: #f0f0f4;
+    --text-secondary: #525256;
+
+    --bg-card-primary: #202229;
+    --text-card-secondary: #66686f;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--bg-primary);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 36px;
+
+    font-family: "Kanit", sans-serif;
+    color: var(--text-primary);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.temp {
+    margin-top: -48px;
+}
+
+.big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#city-input {
+    font-size: 6rem;
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    color: var(--text-primary);
+
+    background-color: #ffffff00;
+    border: none;
+
+    &:active {
+        border: none
+    }
+
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
+
+h2 {
+    font-size: 2.65rem;
+}
+
+p {
+    color: var(--text-secondary);
+    font-size: 1.25rem;
+}
+
+.card {
+    background-color: var(--bg-card-primary);
+    padding: 24px;
+    border-radius: 18px;
+
+    display: flex;
+    gap: 92px;
+}
+
+.view-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    > p {
+        color: var(--text-card-secondary);
+    }
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > p {
+        color: var(--text-primary);
+        font-size: 1.5rem;
+    }
+}
+
+.icon {
+    filter: invert(94%) sepia(12%) saturate(45%) hue-rotate(202deg)
+        brightness(101%) contrast(93%);
+}
+
+.wind-color {
+    filter: invert(93%) sepia(10%) saturate(59%) hue-rotate(201deg)
+        brightness(93%) contrast(92%);
+    color: #dbdbdf;
+}
+
+.humidity-color {
+    filter: invert(68%) sepia(75%) saturate(658%) hue-rotate(171deg)
+        brightness(94%) contrast(88%);
+    color: #5fb4e1;
+}
+
+.rain-color {
+    transform: rotate(180deg);
+    filter: invert(40%) sepia(74%) saturate(769%) hue-rotate(223deg)
+        brightness(93%) contrast(89%);
+    color: #885fe1;
+}
+
+.card-invis {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    gap: 12px;
+}
+
+.forecast {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+
+    justify-content: space-between;
+
+    > p {
+        color: var(--text-primary);
+    }
+
+    .day-week {
+        width: 65px;
+    }
+
+    > .temp-low {
+        color: var(--text-secondary);
+    }
+
+    > .w-icon {
+        width: 32px;
+    }
+
+    .temp-high {
+        color: var(--text-primary);
+    }
+
+    .sunny {
+        color: #f5ef41;
+        filter: invert(85%) sepia(78%) saturate(464%) hue-rotate(350deg)
+            brightness(102%) contrast(92%);
+    }
+
+    .cloudy {
+        color: #d4d4d4;
+        filter: invert(82%) sepia(0%) saturate(1269%) hue-rotate(178deg) brightness(104%) contrast(93%);
+    }
+
+    .rainy {
+        color: #91c2d4;
+        filter: invert(83%) sepia(17%) saturate(610%) hue-rotate(154deg) brightness(89%) contrast(85%);
+        
+    }
+}
+
+.temperature {
+    display: flex;
+    gap: 12px;
+}
